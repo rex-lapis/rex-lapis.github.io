@@ -1,9 +1,9 @@
 ---
 layout: post
-title: BIOS Configuration
+title: Thiết lập BIOS
 ---
 
-Most of these options may not be present in your firmware, I recommend matching up as closely as possible but don't be too concerned if many of these options are not available in your BIOS.
+Một số option có thể sẽ không xuất hiện trong BIOS máy bạn. Mình khuyến khích nên setting những option gần sát với danh sách, đừng quá phân vân nếu các option không có trong đó.
 
 # 1. Desktop
 
@@ -22,12 +22,12 @@ Most of these options may not be present in your firmware, I recommend matching 
 - Peripherals → USB Configuration → XHCI Hand-off : Enabled
 - Chipset → Vt-d : Disabled
 
-### For user who is using **DGPU**
+### Dành cho ai sử dụng GPU
 
 - Peripherals → Initial Display Output : PCIe 1 Slot
 - Chipset → Integrated Graphics : Disabled
 
-### For user who is using IGPU only
+### Dành cho ai sử dụng IGPU
 
 - Peripherals → Initial Display Output : IGFX
 - Chipset → Integrated Graphics : Enabled
@@ -49,12 +49,12 @@ Most of these options may not be present in your firmware, I recommend matching 
 - Boot → Fast Boot: Disabled
 - Boot → Boot From Onboard LAN: Disabled
 
-### For user who is using **DGPU**
+### Dành cho ai sử dụng DGPU
 
 - Advanced \ Chipset Configuration → Primary Graphics Adapter : PCI Express
 - Advanced \ Chipset Configuration → IGPU Multi-Monitor : Disabled
 
-### For user who is using I**GPU only**
+### Dành cho ai sử dụng IGPU
 
 - Advanced \ Chipset Configuration → Primary Graphics Adapter : Onboard
 - Advanced \ Chipset Configuration → Share Memory : 128MB
@@ -74,11 +74,11 @@ Most of these options may not be present in your firmware, I recommend matching 
 - Boot → Fast Boot : Disabled
 - Boot → Secure Boot → OS Type : Other OS
 
-### For user who is using **DGPU**
+### Dành cho ai sử dụng DGPU
 
 - Advanced \ System Agent (SA) Configuration \ Graphics Configuration → Primary Display: PEG
 
-### For user who is using I**GPU only**
+### Dành cho ai sử dụng IGPU
 
 - Advanced \ System Agent (SA) Configuration \ Graphics Configuration → Primary Display: IGFX
 - Advanced \ System Agent (SA) Configuration \ Graphics Configuration → DVMT Pre-Allocated: 128MB
@@ -100,11 +100,11 @@ Most of these options may not be present in your firmware, I recommend matching 
 - Overclocking \ CPU Features → Intel VT-D Tech : [Disabled]
 - Settings \ Boot → Boot mode select : [LEGACY+UEFI]
 
-### For user who is using **DGPU**
+### Dành cho ai sử dụng DGPU
 
 - Settings \ Advanced \ Integrated Graphics Configuration → Initiate Graphic Adapter : PEG
 
-### For user who is using I**GPU only**
+### Dành cho ai sử dụng IGPU
 
 - Advanced \ Integrated Graphics Configuration → Initiate Graphic Adapter : IGD
 
@@ -116,12 +116,12 @@ Most of these options may not be present in your firmware, I recommend matching 
 - Secure Boot
 - Serial/COM Port
 - Parallel Port
-- VT-d (if your BIOS doesn't have, please set `DisableIoMapper` to YES in config.plist)
+- VT-d (nếu trong BIOS máy không có, vui lòng set `DisableIoMapper` là YES trong config.plist)
 - CSM
-- Thunderbolt(For initial install, as Thunderbolt can cause issues if not setup correctly)
+- Thunderbolt
 - Intel SGX
 - Intel Platform Trust
-- CFG Lock (MSR 0xE2 write protection)(**This must be off, if you can't find the option then enable `AppleXcpmCfgLock` under Kernel -> Quirks if you are using OpenCore. (In Clover, it's KernelXcpm). Your hack will not boot with CFG-Lock enabled**)
+- CFG Lock (MSR 0xE2 write protection)(**Nếu bạn không tìm thấy nó trong BIOS, vui lòng enable `AppleXcpmCfgLock` trong section Kernel -> Quirks với OpenCore. (Clover là `KernelXcpm`). Nếu không sẽ không Boot được vào macOS**).
 
 ### **Enable**
 
@@ -134,7 +134,7 @@ Most of these options may not be present in your firmware, I recommend matching 
 - DVMT Pre-Allocated(iGPU Memory): 64MB
 - SATA Mode: AHCI
 
-> AMD System
+# 3. AMD System
 
 ### **Disable**
 
@@ -142,15 +142,18 @@ Most of these options may not be present in your firmware, I recommend matching 
 - Secure Boot
 - Serial/COM Port
 - Parallel Port
-- Compatibility Support Module (CSM)(**Must be off, GPU errors like `gIO` are common when this option in enabled**)
+- Compatibility Support Module (CSM)(**Phải disable, nếu không sẽ gặp lỗi `gIO`**).
 
-**Special note for 3990X users**: macOS currently does not support more than 64 threads in the kernel, and so will kernel panic if it sees more. The 3990X CPU has 128 threads total and so requires half of that disabled. We recommend disabling hyper threading in the BIOS for these situations.
+**Lưu ý đặc biệt cho 3990X**: Hãy tắt Hyper Threading trong BIOS!
 
 ### **Enable**
 
-- Above 4G decoding(**This must be on, if you can't find the option then add `npci=0x2000` to boot-args. Do not have both this option and npci enabled at the same time.**)
-    - If you are on a Gigabyte/Aorus or an AsRock motherboard, enabling this option may break certain drivers(ie. Ethernet) and/or boot failures on other OSes, if it does happen then disable this option and opt for npci instead
+- Above 4G decoding(**Nên bật option này. Nếu không có trong BIOS, hãy thêm `npci=0x2000` vào boot-args. Đừng bật và thêm boot-arg cùng một lúc**).
+    - Một số mainboard của Gigabyte/Aorus hay AsRock, khi bật option này sẽ có thể break một số driver (ie. Ethernet) và không boot được sang các hệ điều hành khác. Nếu bạn gặp hãy sử dụng boot-arg để thay thế.
 - EHCI/XHCI Hand-off
 - OS type: Windows 8.1/10 UEFI Mode
 - SATA Mode: AHCI
 
+### Nguồn tham khảo:
+- VNO Hackintosh
+- Dortania Guide

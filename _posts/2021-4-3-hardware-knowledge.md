@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Know Your Hardware
+title: Kiểm tra thông tin phần cứng
 ---
 
-Due to the good way to find your hardware, using AIDA64 is very easier to grab your machine specs.
+Cách dễ dàng nhất để kiểm tra thông tin phần cứng là sử dụng AIDA64 trên Windows.
 
 ## CPU
 
@@ -13,13 +13,13 @@ Due to the good way to find your hardware, using AIDA64 is very easier to grab y
 
 ![Know%20Your%20Hardware%20f6021885c42542468c0e4a617750e417/gpu.png](/images/gpu.png)
 
-Note: My machine is laptop model so NVIDIA GTX1050Ti is not worked on macOS!
+Laptop của mình sử dụng 1050Ti nên sẽ không hỗ trợ.
 
 ## Chipset
 
 ![Know%20Your%20Hardware%20f6021885c42542468c0e4a617750e417/chipset.png](/images/chipset.png)
 
-Note: Because my laptop doesn't show information about motherboard chipset so I take an example on my friend's PC. He is using Ryzen with B450 motherboard.
+Mình lấy ví dụ trên PC ông bạn, sử dụng chipset B450.
 
 ## Keyboard, Touchpad, Touchscreen...
 
