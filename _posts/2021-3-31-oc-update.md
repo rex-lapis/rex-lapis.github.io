@@ -28,7 +28,9 @@ Việc update OpenCore cũng khá dễ dàng, nhưng bù lại thì việc này 
    - Copy tiếp các kexts đang có bỏ vào EFI/OC/**Kexts**.
    - Trong thư mục Drivers, xoá hết các drivers không cần thiết, chừa lại **OpenRuntime.efi** (bắt buộc) và OpenCanopy.efi (nếu đang sử dụng OpenCore Picker theme).
    - Trong thư mục Tools, xoá hết các tools có trong đó. Chưa cần dùng đến nó thì nó thực sự không cần thiết.
+
 5. Khi chắc chắn mọi thứ đã hoàn thành, sử dụng **ProperTree** để tiến hành snapshot folder **OC** cho **config.plist**, sau đó tiến hành configure lại toàn bộ theo như file config.plist cũ. Mình khuyến nghị nên mở thêm cả guide trên Dortania để check thêm, vì mỗi khi có phiên bản mới, một số property sẽ được thêm vào, chúng có thể làm các bạn cảm thấy bối rối.
+
 6. Khi mọi thứ hoàn thành, nhớ save file **config.plist** lại. Sau đó bỏ vào phân vùng EFI trên USB, restart lại và boot thử. Xác nhận lại toàn bộ hệ thống, nếu không có trục trặc gì thì chúc mừng, bạn đã update thành công phiên bản mới của OpenCore. Lúc này, có thể bỏ thư mục EFI ban nãy vào phân vùng EFI trên SSD và thay thế thư mục EFI cũ.
 
 - Lưu ý:

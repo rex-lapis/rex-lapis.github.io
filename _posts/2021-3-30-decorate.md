@@ -45,7 +45,7 @@ title: Trang trí OpenCanopy
 
     - UEFI -> Drivers: Thêm OpenCanopy.efi, hoặc snapshot lại config.plist
     
-    Credit: https://dortania.github.io/OpenCore.../cosmetic/gui.html
+    Credit: [Dortania](https://dortania.github.io/OpenCore.../cosmetic/gui.html)
 
 ## THÊM BACKGROUND
 
