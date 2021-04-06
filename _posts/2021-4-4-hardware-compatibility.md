@@ -187,7 +187,7 @@ Note: Thông tin chi tiết có thể check thêm [tại đây](https://github.c
     - Dual AMD FirePro D300
     - Dual AMD FirePro D500
     - Dual AMD FirePro D700
-    - FirePro W5100(FakeID needed)
+    - FirePro W5100(Cần fake ID)
     - FirePro W7000
     - FirePro W9000
     - HD 7700
@@ -211,7 +211,7 @@ Note: Thông tin chi tiết có thể check thêm [tại đây](https://github.c
     - RX 550
     - RX 540X
     - RX 540
-    - AMD APUs (card đỒ hoạ tích hợp của CPU AMD).
+    - AMD APUs (card đồ hoạ tích hợp của CPU AMD).
 
 ## Bo mạch chủ
 
