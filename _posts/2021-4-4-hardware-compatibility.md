@@ -49,7 +49,7 @@ Note: Thông tin chi tiết có thể check thêm [tại đây](https://github.c
 
 ### Card đồ hoạ rời:
 
-> NVIDIA GPU:
+1. NVIDIA GPU:
 - Phiên bản hỗ trợ tối đa: Big Sur(11)
     - GTX Titan (GK 110 Maxwell core)
     - GTX Titan Black (GK 110 Maxwell core)
@@ -127,7 +127,7 @@ Note: Thông tin chi tiết có thể check thêm [tại đây](https://github.c
     - Quadro K1200
     - Quadro K620
 
-> AMD GPU
+2. AMD GPU
 - Phiên bản hỗ trợ tối đa: Big Sur(11)
     - RX 5500
     - RX 5500 XT
