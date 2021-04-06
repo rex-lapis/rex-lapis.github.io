@@ -3,7 +3,7 @@ layout: post
 title: Multiboot sử dụng OpenCore
 ---
 
-- OpenCore hỗ trợ multi boot khá tốt. Nhưng có một điểm trừ "chết người" của nó, là việc nó inject toàn bộ ACPI có trong folder bootloader và SMBIOS sang các hệ điều hành khác, dẫn đến việc boot sang Windows hay Linux bị lỗi, hoặc thậm chí đơn giản là BSOD huyền thoại.
+OpenCore hỗ trợ multi boot khá tốt. Nhưng có một điểm trừ "chết người" của nó, là việc nó inject toàn bộ ACPI có trong folder bootloader và SMBIOS sang các hệ điều hành khác, dẫn đến việc boot sang Windows hay Linux bị lỗi, hoặc thậm chí đơn giản là BSOD huyền thoại.
 
 - Vậy nên, để có thể chắc chắn việc multi boot thông qua OpenCore thực sự đạt ở mức độ "ổn định" nhất có thể (mình sẽ không nói là hoàn hảo bởi không có gì là hoàn hảo đến tuyệt đối cả), cần lưu ý một số vấn đề không to mà cũng chẳng hề nhỏ sau:
 
