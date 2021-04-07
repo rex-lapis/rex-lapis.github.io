@@ -1,4 +1,9 @@
-- Bảng AAPL,ig-platform-id:
+---
+layout: post
+title: Patch framebuffer cho iGPU
+---
+
+Bảng AAPL,ig-platform-id:
 
 #### Desktop:
 
