@@ -263,6 +263,7 @@ Note: Thông tin chi tiết có thể check thêm [tại đây](https://github.c
                     - BrcmPatchRAM3 cho macOS 10.14+ (dùng để pair với BrcmBluetoothInjector).
                     - BrcmPatchRAM2 cho macOS 10.11-10.14.
                     - BrcmPatchRAM cho macOS 10.10 hoặc thấp hơn.
+    
 - Mini PCIe
     - **BCM94360HMB** (ABGN+AC, BT 4.0, 3x3:3):
         - AzureWave AW-CB160H
@@ -287,9 +288,11 @@ Note: Thông tin chi tiết có thể check thêm [tại đây](https://github.c
                     - BrcmPatchRAM3 cho macOS 10.14+ (dùng để pair với BrcmBluetoothInjector).
                     - BrcmPatchRAM2 cho macOS 10.11-10.14.
                     - BrcmPatchRAM cho macOS 10.10 hoặc thấp hơn.
+
 - M.2
 Card Wi-Fi M.2 sẽ có các loại: A, E và A+E:
 ![Hardware%20Compatibility%20bb3585ebb10e47e5bf47d4422f391c46/Untitled.png](/images/wifi-m2.png)
+
     - **BCM94360NG**:
         - Fenvi BCM94360NG(A+E Key, native không cần kext)(BT 4.0)
     - **BCM943602**:
