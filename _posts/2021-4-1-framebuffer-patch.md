@@ -80,7 +80,7 @@ Danh sách AAPL,ig-platform-id cho Desktop và Laptop
 - SMBIOS: **MacBookPro14,1**
 
 9. UHD617
-- AAPL,ig-platform-id: 0000C087
+- AAPL,ig-platform-id: **0000C087**
 - device-id:
 - SMBIOS: **MacBookPro14,2**
 
@@ -95,7 +95,7 @@ Danh sách AAPL,ig-platform-id cho Desktop và Laptop
 - SMBIOS: **MacBookPro15,2**
 
 12. UHD630 (Cometlake)
-- AAPL,ig-platform-id: 00009B3E
+- AAPL,ig-platform-id: **00009B3E**
 - device-id: **9B3E0000**
 - SMBIOS: **MacBookPro16,3**
 
