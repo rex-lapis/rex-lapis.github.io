@@ -135,3 +135,5 @@ title: Tạo bộ cài macOS online trên Windows
    - Do là bộ cài online nên khi cài đặt cũng cần phải có tốc độ mạng khoẻ và thực sự ổn định.
    - Yêu cầu cần có kiến thức cơ bản trong việc tìm hiểu phần cứng của máy, để xác định được chipset mạng LAN hoặc Wi-Fi. Từ đó tìm kext cho đúng để có thể có internet, hỗ trợ trong quá trình cài đặt.
    - Yêu cầu phải biết tạo bootloader. Bởi vậy nó sẽ không dành cho những người lười nhác.
+
+Nguồn: Dortania
