@@ -15,8 +15,6 @@ title: Tạo bộ cài macOS online trên Windows
 
 3. Hãy chắc chắn rằng Windows đã được cài [Python](https://www.python.org/downloads/).
 
-   Lưu ý: Bắt buộc thay thế ba tập tin này nếu muốn update OpenCore.
-
 #### Tải macOS Recovery
 
 1. Trong thư mục OpenCore vừa tải ở trên, tìm đến Utilities/macosrecovery
