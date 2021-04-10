@@ -17,7 +17,7 @@ title: Tạo bộ cài macOS online trên Windows
 
 #### Tải macOS Recovery
 
-1. Trong thư mục OpenCore vừa tải ở trên, tìm đến Utilities/macosrecovery
+1. Trong thư mục OpenCore vừa tải ở trên, tìm đến Utilities/macrecovery
 
 ![macrecovery](/images/macrecovery.png)
 
