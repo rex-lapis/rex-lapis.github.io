@@ -3,6 +3,12 @@ layout: post
 title: Patch framebuffer cho iGPU
 ---
 
+Yêu cầu: Cần có kext WhateverGreen và Lilu
+
+Thêm **PciRoot(0x0)/Pci(0x2,0x0)** vào phần DeviceProperties trong file config.plist, sau đó apply patch
+
+![oc_framebuffer](/images/oc_framebuffer.png)
+
 Danh sách AAPL,ig-platform-id cho Desktop và Laptop
 
 #### Desktop:
